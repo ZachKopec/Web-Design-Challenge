@@ -1,6 +1,6 @@
 import pandas as pd
 
-load_file = "WebVisualizations/Resources/cities.csv"
+load_file = "Resources/cities.csv"
 
 cities_data_df = pd.read_csv(load_file)
 cities_data_df
