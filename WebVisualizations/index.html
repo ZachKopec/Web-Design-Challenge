@@ -15,7 +15,6 @@
 
 
   <!-- Our own CSS stylesheet -->
-  <!-- Sidebar <link href="css/simple-sidebar.css" rel="stylesheet"> -->
   <link href="Assets/css/style.css" rel="stylesheet">
 
 </head>
@@ -23,7 +22,21 @@
 <body>
 
   <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading">Visualizations</div>
+      <div class="list-group-flush">
+        <a href="max_temp.html" title="Maxium Temperature Analysis" class="list-group-item list-group-item-action bg-light"><img src="Visualizations/fig1.png" height="50" width="100"/></a>
+        <a href="humidity.html" title="Humidity Analysis" class="list-group-item list-group-item-action bg-light"><img src="Visualizations/fig2.png" height="50" width="100"/></a>
+        <a href="cloudiness.html" title="Cloudiness Analysis"class="list-group-item list-group-item-action bg-light"><img src="Visualizations/fig3.png" height="50" width="100"/></a>
+        <a href="wind_speed.html" title="Wind Speed Analysis" class="list-group-item list-group-item-action bg-light"><img src="Visualizations/fig4.png" height="50" width="100"/></a>
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
     <div id="page-content-wrapper">
+      
       <h1 class="mt-4" style="padding-left: 25px;">Summary: Latitute Vs. X</h1>
       <hr>
       <div>
@@ -35,7 +48,9 @@
         <p style="padding-left: 15px; padding-right: 100px;">The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
         <p style="padding-left: 15px; padding-right: 100px;">After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
       </div>
-  </div>
+    
+    </div>
+  
   </div>
 
   <!-- Javascript -->
