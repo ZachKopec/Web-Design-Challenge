@@ -10,7 +10,7 @@ var fullURL = baseURL + "/" + interfaceName + "/" + methodName + "/" + methodVer
 
 var url = "http://api.steampowered.com/ISteamWebAPIUtil/GetSupportedAPIList/v1/?key=" + API_KEY + "&steamid=000123000456"; 
 
-d3.json(fullURL, function(response) {
+d3.json(url, function(response) {
 
     console.log(response)
 
